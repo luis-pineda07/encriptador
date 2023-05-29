@@ -1,0 +1,63 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Sen&display=swap" rel="stylesheet">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+    <div class="content">
+        <div class="content_body1">
+            <div class="content_encabezado">
+                <div class="content_logo">
+                    <img src="img/logo.png" alt="logo de alura">
+                    <h1>Encriptador de texto</h1>
+                </div>
+            </div>
+            <div class="content_cuerpo">
+                <div class="content_cuerpo_a">
+                    <textarea id="casilla_texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="content_area_inferior">
+                        <div class="content_inferior-logo_mensaje">
+                            <img src="img/simbolo.png" alt="">
+                            <p>Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="content_inferior_botones">
+                                <button type="button" id="btnencriptar" onclick="Encriptar()">Encriptar</button>
+                                <button type="button" id="btndesencriptar" onclick="DesencriptarV2()">Desencriptar </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_body2">
+            <div class="content_mensaje">
+                <div class="content_mensaje_info" id="contendor-info1">
+                    <img src="img/Muñeco.png" alt="imagen de una persona" id="munheco">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="content_mensaje_info" id="contendor-info2">
+                    <textarea id="texto_encriptado" cols="30" rows="10" disabled></textarea>
+                    <button type="button" id="btncopiar" onclick="copiarTextoPortaPapeles()">Copiar</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="pie_page">
+                <p class="copyright">LuisPineda <img src="img/GitHub-Mark-Light-32px.png" alt="logo_github" class="footer_img"></p>
+                <p class="copyright">&copy Copyright Encriptador - 2023</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
